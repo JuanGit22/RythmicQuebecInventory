@@ -10,15 +10,28 @@ using System.Windows.Forms;
 
 namespace RythmicQuebecInventory
 {
-    public partial class AddCoach : Form
+    public partial class AddDeleteCoach : Form
     {
-        public AddCoach()
+        public AddDeleteCoach()
         {
             InitializeComponent();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            admLogin oform = new admLogin();
+            oform.ShowDialog();
+
 
         }
     }

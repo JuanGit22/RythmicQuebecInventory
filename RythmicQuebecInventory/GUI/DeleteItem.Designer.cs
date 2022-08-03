@@ -1,6 +1,6 @@
 ﻿namespace RythmicQuebecInventory
 {
-    partial class deleteWindow2
+    partial class DeleteItem
     {
         /// <summary>
         /// Required designer variable.

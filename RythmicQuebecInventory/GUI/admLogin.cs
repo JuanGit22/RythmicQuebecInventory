@@ -32,15 +32,27 @@ namespace RythmicQuebecInventory
             string username = userName.Text;
             
             string password = passWord.Text;
-            
-            if (!("Yelena".Equals(username) && "123456".Equals(password)))
-           // {
-                //MessageBox.Show("");
-            //}
-           // else
+
+            if (("Yelena".Equals(username) && "123456".Equals(password)))
+            {
+                admOptions oform = new admOptions();
+                oform.ShowDialog();
+            }
+            else
             {
                 MessageBox.Show("Invalid username or password.");
             }
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void logInButton_Click(object sender, EventArgs e)
+        {
+            admOptions oform = new admOptions();
+            oform.ShowDialog();
         }
     }
 }

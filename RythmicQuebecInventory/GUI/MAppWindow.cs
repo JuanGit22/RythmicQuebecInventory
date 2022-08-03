@@ -39,7 +39,14 @@ namespace RythmicQuebecInventory
 
         private void label3_Click(object sender, EventArgs e)
         {
-            Application.Run(new admLogin());
+            admLogin oform = new admLogin();
+            oform.ShowDialog();
+        }
+
+        private void viewAndSch_Click(object sender, EventArgs e)
+        {
+            FormViewSearch oform = new FormViewSearch();
+            oform.ShowDialog();
         }
     }
 }

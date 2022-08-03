@@ -1,6 +1,6 @@
 ﻿namespace RythmicQuebecInventory
 {
-    partial class ModifyWindow
+    partial class ModifyItems
     {
         /// <summary>
         /// Required designer variable.

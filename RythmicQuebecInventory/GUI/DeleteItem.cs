@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace RythmicQuebecInventory
 {
-    public partial class backupDatabese : Form
+    public partial class DeleteItem : Form
     {
-        public backupDatabese()
+        public DeleteItem()
         {
             InitializeComponent();
+        }
+
+        private void deleteWindow2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

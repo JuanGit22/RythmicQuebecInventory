@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelLoginpage = new System.Windows.Forms.Label();
             this.admAccessClick = new System.Windows.Forms.Label();
             this.userName = new System.Windows.Forms.TextBox();
             this.passWord = new System.Windows.Forms.TextBox();
-            this.logInButton = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // labelLoginpage
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(169, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "LOGIN PAGE";
+            this.labelLoginpage.AutoSize = true;
+            this.labelLoginpage.BackColor = System.Drawing.Color.Black;
+            this.labelLoginpage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoginpage.ForeColor = System.Drawing.Color.Silver;
+            this.labelLoginpage.Location = new System.Drawing.Point(127, 73);
+            this.labelLoginpage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelLoginpage.Name = "labelLoginpage";
+            this.labelLoginpage.Size = new System.Drawing.Size(109, 18);
+            this.labelLoginpage.TabIndex = 0;
+            this.labelLoginpage.Text = "LOGIN PAGE";
             // 
             // admAccessClick
             // 
@@ -53,9 +54,10 @@
             this.admAccessClick.BackColor = System.Drawing.Color.Black;
             this.admAccessClick.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.admAccessClick.ForeColor = System.Drawing.Color.Silver;
-            this.admAccessClick.Location = new System.Drawing.Point(1010, 30);
+            this.admAccessClick.Location = new System.Drawing.Point(468, 73);
+            this.admAccessClick.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.admAccessClick.Name = "admAccessClick";
-            this.admAccessClick.Size = new System.Drawing.Size(178, 25);
+            this.admAccessClick.Size = new System.Drawing.Size(143, 20);
             this.admAccessClick.TabIndex = 1;
             this.admAccessClick.Text = "ADMIN ACCESS";
             this.admAccessClick.Click += new System.EventHandler(this.admAccessClick_Click);
@@ -66,9 +68,10 @@
             this.userName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userName.ForeColor = System.Drawing.Color.Gray;
-            this.userName.Location = new System.Drawing.Point(169, 150);
+            this.userName.Location = new System.Drawing.Point(127, 122);
+            this.userName.Margin = new System.Windows.Forms.Padding(2);
             this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(190, 27);
+            this.userName.Size = new System.Drawing.Size(142, 21);
             this.userName.TabIndex = 2;
             this.userName.Text = "Username";
             this.userName.TextChanged += new System.EventHandler(this.userName_TextChanged);
@@ -79,35 +82,39 @@
             this.passWord.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passWord.ForeColor = System.Drawing.Color.Gray;
-            this.passWord.Location = new System.Drawing.Point(169, 184);
+            this.passWord.Location = new System.Drawing.Point(127, 150);
+            this.passWord.Margin = new System.Windows.Forms.Padding(2);
             this.passWord.Name = "passWord";
-            this.passWord.Size = new System.Drawing.Size(190, 27);
+            this.passWord.Size = new System.Drawing.Size(142, 21);
             this.passWord.TabIndex = 0;
             this.passWord.Text = "Password";
             // 
-            // logInButton
+            // Back
             // 
-            this.logInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logInButton.ForeColor = System.Drawing.Color.Gray;
-            this.logInButton.Location = new System.Drawing.Point(250, 250);
-            this.logInButton.Name = "logInButton";
-            this.logInButton.Size = new System.Drawing.Size(104, 35);
-            this.logInButton.TabIndex = 0;
-            this.logInButton.Text = "LOGIN";
-            this.logInButton.UseVisualStyleBackColor = true;
+            this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.ForeColor = System.Drawing.Color.Gray;
+            this.Back.Location = new System.Drawing.Point(158, 269);
+            this.Back.Margin = new System.Windows.Forms.Padding(2);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(78, 28);
+            this.Back.TabIndex = 3;
+            this.Back.Text = "BACK";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // admLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1099, 582);
-            this.Controls.Add(this.logInButton);
+            this.ClientSize = new System.Drawing.Size(824, 473);
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.passWord);
             this.Controls.Add(this.userName);
             this.Controls.Add(this.admAccessClick);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelLoginpage);
             this.ForeColor = System.Drawing.Color.Silver;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "admLogin";
             this.Text = "admLogin";
             this.Load += new System.EventHandler(this.admLogin_Load);
@@ -118,10 +125,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelLoginpage;
         private System.Windows.Forms.Label admAccessClick;
         private System.Windows.Forms.TextBox userName;
         private System.Windows.Forms.TextBox passWord;
-        private System.Windows.Forms.Button logInButton;
+        private System.Windows.Forms.Button Back;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RythmicQuebecInventory
 {
-    public partial class creatQRCode : Form
+    public partial class createQRCode : Form
     {
-        public creatQRCode()
+        public createQRCode()
         {
             InitializeComponent();
             //insertComboItems();
@@ -26,6 +26,14 @@ namespace RythmicQuebecInventory
 
         private void creatQRCode_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            admLogin oform = new admLogin();
+            oform.ShowDialog();
+
 
         }
     }

@@ -30,13 +30,13 @@
         {
             this.logOut = new System.Windows.Forms.Label();
             this.admOptionLabel = new System.Windows.Forms.Label();
-            this.addItems = new System.Windows.Forms.TextBox();
-            this.modiDeleItems = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ModifyDeleteItems = new System.Windows.Forms.Button();
+            this.AddDeleteCoaches = new System.Windows.Forms.Button();
+            this.ViewAddBoxes = new System.Windows.Forms.Button();
+            this.ItemsControl = new System.Windows.Forms.Button();
+            this.CreateQRCodes = new System.Windows.Forms.Button();
+            this.BackUpDatabase = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // logOut
@@ -45,11 +45,13 @@
             this.logOut.BackColor = System.Drawing.Color.Black;
             this.logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOut.ForeColor = System.Drawing.Color.Silver;
-            this.logOut.Location = new System.Drawing.Point(1010, 30);
+            this.logOut.Location = new System.Drawing.Point(758, 24);
+            this.logOut.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(109, 25);
+            this.logOut.Size = new System.Drawing.Size(87, 20);
             this.logOut.TabIndex = 0;
             this.logOut.Text = "LOG OUT";
+            this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
             // admOptionLabel
             // 
@@ -57,105 +59,114 @@
             this.admOptionLabel.BackColor = System.Drawing.Color.Black;
             this.admOptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.admOptionLabel.ForeColor = System.Drawing.Color.Silver;
-            this.admOptionLabel.Location = new System.Drawing.Point(169, 90);
+            this.admOptionLabel.Location = new System.Drawing.Point(127, 73);
+            this.admOptionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.admOptionLabel.Name = "admOptionLabel";
-            this.admOptionLabel.Size = new System.Drawing.Size(165, 22);
+            this.admOptionLabel.Size = new System.Drawing.Size(139, 18);
             this.admOptionLabel.TabIndex = 1;
             this.admOptionLabel.Text = "ADMIN OPTIONS";
             // 
-            // addItems
+            // button1
             // 
-            this.addItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addItems.ForeColor = System.Drawing.Color.Gray;
-            this.addItems.Location = new System.Drawing.Point(169, 150);
-            this.addItems.Name = "addItems";
-            this.addItems.Size = new System.Drawing.Size(300, 34);
-            this.addItems.TabIndex = 2;
-            this.addItems.Text = "ADD NEW ITEMS";
-            this.addItems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Gray;
+            this.button1.Location = new System.Drawing.Point(127, 125);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(258, 28);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "ADD NEW ITEMS";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // modiDeleItems
+            // ModifyDeleteItems
             // 
-            this.modiDeleItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modiDeleItems.ForeColor = System.Drawing.Color.Gray;
-            this.modiDeleItems.Location = new System.Drawing.Point(169, 195);
-            this.modiDeleItems.Name = "modiDeleItems";
-            this.modiDeleItems.Size = new System.Drawing.Size(300, 34);
-            this.modiDeleItems.TabIndex = 8;
-            this.modiDeleItems.Text = "MODIFY / DELETE ITEMS";
-            this.modiDeleItems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ModifyDeleteItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModifyDeleteItems.ForeColor = System.Drawing.Color.Gray;
+            this.ModifyDeleteItems.Location = new System.Drawing.Point(127, 159);
+            this.ModifyDeleteItems.Name = "ModifyDeleteItems";
+            this.ModifyDeleteItems.Size = new System.Drawing.Size(258, 28);
+            this.ModifyDeleteItems.TabIndex = 16;
+            this.ModifyDeleteItems.Text = "MODIFY / DELETE ITEMS";
+            this.ModifyDeleteItems.UseVisualStyleBackColor = true;
+            this.ModifyDeleteItems.Click += new System.EventHandler(this.ModifyDeleteItems_Click);
             // 
-            // textBox2
+            // AddDeleteCoaches
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(169, 285);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 34);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.Text = "VIEW / ADD BOXES";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AddDeleteCoaches.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddDeleteCoaches.ForeColor = System.Drawing.Color.Gray;
+            this.AddDeleteCoaches.Location = new System.Drawing.Point(127, 199);
+            this.AddDeleteCoaches.Name = "AddDeleteCoaches";
+            this.AddDeleteCoaches.Size = new System.Drawing.Size(258, 28);
+            this.AddDeleteCoaches.TabIndex = 17;
+            this.AddDeleteCoaches.Text = "ADD DELETE COACHES";
+            this.AddDeleteCoaches.UseVisualStyleBackColor = true;
+            this.AddDeleteCoaches.Click += new System.EventHandler(this.AddDeleteCoaches_Click);
             // 
-            // textBox3
+            // ViewAddBoxes
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Gray;
-            this.textBox3.Location = new System.Drawing.Point(169, 240);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(300, 34);
-            this.textBox3.TabIndex = 9;
-            this.textBox3.Text = "ADD DELETE COACHES";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ViewAddBoxes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewAddBoxes.ForeColor = System.Drawing.Color.Gray;
+            this.ViewAddBoxes.Location = new System.Drawing.Point(127, 233);
+            this.ViewAddBoxes.Name = "ViewAddBoxes";
+            this.ViewAddBoxes.Size = new System.Drawing.Size(258, 28);
+            this.ViewAddBoxes.TabIndex = 18;
+            this.ViewAddBoxes.Text = "VIEW / ADD BOXES";
+            this.ViewAddBoxes.UseVisualStyleBackColor = true;
+            this.ViewAddBoxes.Click += new System.EventHandler(this.ViewAddBoxes_Click);
             // 
-            // textBox4
+            // ItemsControl
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Gray;
-            this.textBox4.Location = new System.Drawing.Point(169, 375);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(300, 34);
-            this.textBox4.TabIndex = 12;
-            this.textBox4.Text = "CREATE QR CODES";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ItemsControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemsControl.ForeColor = System.Drawing.Color.Gray;
+            this.ItemsControl.Location = new System.Drawing.Point(127, 272);
+            this.ItemsControl.Name = "ItemsControl";
+            this.ItemsControl.Size = new System.Drawing.Size(258, 28);
+            this.ItemsControl.TabIndex = 19;
+            this.ItemsControl.Text = "ITEMS CONTROL";
+            this.ItemsControl.UseVisualStyleBackColor = true;
+            this.ItemsControl.Click += new System.EventHandler(this.ItemsControl_Click);
             // 
-            // textBox5
+            // CreateQRCodes
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Gray;
-            this.textBox5.Location = new System.Drawing.Point(169, 330);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(300, 34);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.Text = "ITEMS CONTROL";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CreateQRCodes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateQRCodes.ForeColor = System.Drawing.Color.Gray;
+            this.CreateQRCodes.Location = new System.Drawing.Point(127, 308);
+            this.CreateQRCodes.Name = "CreateQRCodes";
+            this.CreateQRCodes.Size = new System.Drawing.Size(258, 28);
+            this.CreateQRCodes.TabIndex = 20;
+            this.CreateQRCodes.Text = "CREATE QR CODES";
+            this.CreateQRCodes.UseVisualStyleBackColor = true;
+            this.CreateQRCodes.Click += new System.EventHandler(this.CreateQRCodes_Click);
             // 
-            // textBox1
+            // BackUpDatabase
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(169, 420);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 34);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.Text = "BUCKUP DATABASE";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BackUpDatabase.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackUpDatabase.ForeColor = System.Drawing.Color.Gray;
+            this.BackUpDatabase.Location = new System.Drawing.Point(127, 342);
+            this.BackUpDatabase.Name = "BackUpDatabase";
+            this.BackUpDatabase.Size = new System.Drawing.Size(258, 28);
+            this.BackUpDatabase.TabIndex = 21;
+            this.BackUpDatabase.Text = "BUCKUP DATABASE";
+            this.BackUpDatabase.UseVisualStyleBackColor = true;
+            this.BackUpDatabase.Click += new System.EventHandler(this.BackUpDatabase_Click);
             // 
             // admOptions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.modiDeleItems);
-            this.Controls.Add(this.addItems);
+            this.ClientSize = new System.Drawing.Size(946, 547);
+            this.Controls.Add(this.BackUpDatabase);
+            this.Controls.Add(this.CreateQRCodes);
+            this.Controls.Add(this.ItemsControl);
+            this.Controls.Add(this.ViewAddBoxes);
+            this.Controls.Add(this.AddDeleteCoaches);
+            this.Controls.Add(this.ModifyDeleteItems);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.admOptionLabel);
             this.Controls.Add(this.logOut);
             this.ForeColor = System.Drawing.Color.Silver;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "admOptions";
             this.Text = "admOptions";
             this.ResumeLayout(false);
@@ -167,12 +178,12 @@
 
         private System.Windows.Forms.Label logOut;
         private System.Windows.Forms.Label admOptionLabel;
-        private System.Windows.Forms.TextBox addItems;
-        private System.Windows.Forms.TextBox modiDeleItems;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ModifyDeleteItems;
+        private System.Windows.Forms.Button AddDeleteCoaches;
+        private System.Windows.Forms.Button ViewAddBoxes;
+        private System.Windows.Forms.Button ItemsControl;
+        private System.Windows.Forms.Button CreateQRCodes;
+        private System.Windows.Forms.Button BackUpDatabase;
     }
 }

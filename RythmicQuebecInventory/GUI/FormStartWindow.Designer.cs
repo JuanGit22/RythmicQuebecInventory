@@ -30,31 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStartWindow));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelInventaire = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelInventaire
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(505, 618);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(275, 22);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "INVENTAIRE DE STOCKAGE";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelInventaire.AutoSize = true;
+            this.labelInventaire.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInventaire.ForeColor = System.Drawing.Color.Silver;
+            this.labelInventaire.Location = new System.Drawing.Point(379, 502);
+            this.labelInventaire.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelInventaire.Name = "labelInventaire";
+            this.labelInventaire.Size = new System.Drawing.Size(228, 18);
+            this.labelInventaire.TabIndex = 3;
+            this.labelInventaire.Text = "INVENTAIRE DE STOCKAGE";
+            this.labelInventaire.Click += new System.EventHandler(this.label1_Click);
             // 
             // FormStartWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(946, 547);
+            this.Controls.Add(this.labelInventaire);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormStartWindow";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -66,6 +68,6 @@
         #endregion
 
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelInventaire;
     }
 }
