@@ -29,8 +29,23 @@ namespace RythmicQuebecInventory
 
         private void admAccessClick_Click(object sender, EventArgs e)
         {
-            string username = userName.Text;
             
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void logInButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string username = userName.Text;
+
             string password = passWord.Text;
 
             if (("Yelena".Equals(username) && "123456".Equals(password)))
@@ -42,17 +57,6 @@ namespace RythmicQuebecInventory
             {
                 MessageBox.Show("Invalid username or password.");
             }
-        }
-
-        private void Back_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void logInButton_Click(object sender, EventArgs e)
-        {
-            admOptions oform = new admOptions();
-            oform.ShowDialog();
         }
     }
 }

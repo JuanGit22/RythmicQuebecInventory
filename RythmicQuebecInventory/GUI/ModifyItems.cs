@@ -26,5 +26,11 @@ namespace RythmicQuebecInventory
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            MAppWindow oform = new MAppWindow();
+            oform.ShowDialog();
+        }
     }
 }

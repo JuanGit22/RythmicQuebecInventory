@@ -26,5 +26,16 @@ namespace RythmicQuebecInventory
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FormModifyDelete oform = new FormModifyDelete();
+                oform.ShowDialog();
+        }
     }
 }

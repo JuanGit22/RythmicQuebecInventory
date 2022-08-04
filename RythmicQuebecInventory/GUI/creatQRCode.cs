@@ -31,7 +31,7 @@ namespace RythmicQuebecInventory
 
         private void label1_Click(object sender, EventArgs e)
         {
-            admLogin oform = new admLogin();
+            MAppWindow oform = new MAppWindow();
             oform.ShowDialog();
 
 

@@ -29,9 +29,9 @@ namespace RythmicQuebecInventory
 
         private void label2_Click(object sender, EventArgs e)
         {
-            admLogin oform = new admLogin();
-            oform.ShowDialog();
 
+            MAppWindow oform = new MAppWindow();
+            oform.ShowDialog();
 
         }
     }

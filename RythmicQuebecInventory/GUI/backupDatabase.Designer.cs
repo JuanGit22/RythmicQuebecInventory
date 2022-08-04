@@ -44,6 +44,7 @@
             this.label1.Size = new System.Drawing.Size(87, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "LOG OUT";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -66,7 +67,7 @@
             ".SQL",
             ".CSV"});
             this.cboBackupOpt.Location = new System.Drawing.Point(127, 122);
-            this.cboBackupOpt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboBackupOpt.Margin = new System.Windows.Forms.Padding(2);
             this.cboBackupOpt.Name = "cboBackupOpt";
             this.cboBackupOpt.Size = new System.Drawing.Size(211, 30);
             this.cboBackupOpt.TabIndex = 2;
@@ -82,7 +83,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "backupDatabase";
             this.Text = "Backup Database";
             this.ResumeLayout(false);

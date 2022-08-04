@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.labelLoginpage = new System.Windows.Forms.Label();
-            this.admAccessClick = new System.Windows.Forms.Label();
             this.userName = new System.Windows.Forms.TextBox();
             this.passWord = new System.Windows.Forms.TextBox();
             this.Back = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelLoginpage
@@ -47,20 +47,6 @@
             this.labelLoginpage.Size = new System.Drawing.Size(109, 18);
             this.labelLoginpage.TabIndex = 0;
             this.labelLoginpage.Text = "LOGIN PAGE";
-            // 
-            // admAccessClick
-            // 
-            this.admAccessClick.AutoSize = true;
-            this.admAccessClick.BackColor = System.Drawing.Color.Black;
-            this.admAccessClick.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admAccessClick.ForeColor = System.Drawing.Color.Silver;
-            this.admAccessClick.Location = new System.Drawing.Point(468, 73);
-            this.admAccessClick.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.admAccessClick.Name = "admAccessClick";
-            this.admAccessClick.Size = new System.Drawing.Size(143, 20);
-            this.admAccessClick.TabIndex = 1;
-            this.admAccessClick.Text = "ADMIN ACCESS";
-            this.admAccessClick.Click += new System.EventHandler(this.admAccessClick_Click);
             // 
             // userName
             // 
@@ -96,11 +82,24 @@
             this.Back.Location = new System.Drawing.Point(158, 269);
             this.Back.Margin = new System.Windows.Forms.Padding(2);
             this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(78, 28);
+            this.Back.Size = new System.Drawing.Size(91, 28);
             this.Back.TabIndex = 3;
             this.Back.Text = "BACK";
             this.Back.UseVisualStyleBackColor = true;
             this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Gray;
+            this.button1.Location = new System.Drawing.Point(158, 218);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 28);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "LOGIN";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // admLogin
             // 
@@ -108,10 +107,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(824, 473);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.passWord);
             this.Controls.Add(this.userName);
-            this.Controls.Add(this.admAccessClick);
             this.Controls.Add(this.labelLoginpage);
             this.ForeColor = System.Drawing.Color.Silver;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -126,9 +125,9 @@
         #endregion
 
         private System.Windows.Forms.Label labelLoginpage;
-        private System.Windows.Forms.Label admAccessClick;
         private System.Windows.Forms.TextBox userName;
         private System.Windows.Forms.TextBox passWord;
         private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Button button1;
     }
 }
